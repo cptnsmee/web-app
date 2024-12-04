@@ -1,0 +1,23 @@
+<%- include('layout') %>
+
+<div class="container mx-auto">
+    <button class="bg-green-500 text-white px-4 py-2 rounded mb-4" onclick="openAddItemModal()">Add Item</button>
+    <table class="table-auto w-full bg-white shadow rounded">
+        <thead>
+            <tr>
+                <th class="px-4 py-2">ID</th>
+                <th class="px-4 py-2">Name</th>
+                <th class="px-4 py-2">Description</th>
+                <th class="px-4 py-2">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="itemsTable">
+            <!-- Rows will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Include modals -->
+<%- include('modals/addItem') %>
+<%- include('modals/editItem') %>
+<%- include('modals/deleteItem') %>

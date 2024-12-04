@@ -1,0 +1,11 @@
+<div id="addItemModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white p-6 rounded shadow">
+        <h2 class="text-xl mb-4">Add Item</h2>
+        <form id="addItemForm">
+            <input type="text" name="name" placeholder="Item Name" required class="border p-2 w-full mb-4">
+            <textarea name="description" placeholder="Description" class="border p-2 w-full mb-4"></textarea>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Save</button>
+            <button type="button" class="bg-gray-500 text-white px-4 py-2 rounded" onclick="closeAddItemModal()">Cancel</button>
+        </form>
+    </div>
+</div>
